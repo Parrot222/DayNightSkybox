@@ -1,0 +1,24 @@
+{
+    "name": "DayNightSkybox",
+    "rootNamespace": "DayNightSkybox",
+    "references": [
+        "UnityEngine.UI",
+        "Unity.InputSystem",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "DAYNIGHT_INPUT_SYSTEM"
+        }
+    ],
+    "noEngineReferences": false
+}

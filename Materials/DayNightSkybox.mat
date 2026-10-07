@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DayNightSkybox
+  m_Shader: {fileID: 4800000, guid: 073b8e8e42694aff9db301305dbbc70c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: 3b8b727531024bc4a4f0fab633c4ddc6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NightTexture:
+        m_Texture: {fileID: 2800000, guid: c65366852dd24dd2a183dd4ff5502907, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SunsetTexture:
+        m_Texture: {fileID: 2800000, guid: 18f75c4b1f894fe599e9190783a1cba0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: c206ff67f29841bbaad032112c92edaa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Moon_Texture:
+        m_Texture: {fileID: 2800000, guid: 13192fb803ed4f3ca19fe509d47c2fc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star_Texture:
+        m_Texture: {fileID: 2800000, guid: 5a4b39f50eed4dec811e6c63e885c495, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Twinkle_Mask:
+        m_Texture: {fileID: 2800000, guid: 339662e69c24409582a4dccbabdc713c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Sky_Rotation_Speed: 0.02
+    - _Night_Start: -0.15
+    - _Night_End: 0.1
+    - _Sunset_Sun_Size: 1.8
+    - _SunClouds: 1.5
+    - _SunClouds_Alpha: 0.225
+    - _Mask_Alpha: 0
+    - _Horizon_Glow_Intensity: 1.5
+    - _Horizon_Glow_Height: 8
+    - _Horizon_Glow_Spread: 3
+    - _Moon_Size: 0.1255
+    - _Moon_Day_Visibility: 0.25
+    - _Moon_Power: 31.86
+    - _Moon_Intensity: 0.1
+    - _Halo_Power: 500
+    - _Halo_Intensity: 0.5
+    - _Star_Intensity: 0.5
+    - _Twinkle_Speed: 2
+    - _Twinkle_Amount: 1
+    m_Colors:
+    - _UV: {r: 2, g: 2, b: 0, a: 0.25}
+    - _Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+    - _DayColor: {r: 0, g: 0.27908167, b: 0.7075472, a: 1}
+    - _DayOcean: {r: 0.3160377, g: 0.5441746, b: 1, a: 1}
+    - _NightTop: {r: 0.065391295, g: 0.052465305, b: 0.084905684, a: 1}
+    - _NightBottom: {r: 0.017933436, g: 0.10668879, b: 0.2924528, a: 1}
+    - _SunsetColorTop: {r: 0.08664116, g: 0.12691933, b: 0.31132078, a: 1}
+    - _SunsetColorBottom: {r: 0.6320754, g: 0.21168566, b: 0.21168566, a: 1}
+    - _SkyStep: {r: 0.73, g: 0.85, b: 0.5, a: 0.4}
+    - _SunsetTime: {r: 1.1, g: 1.38, b: 0, a: 0}
+    - _Night_Sunset_Time: {r: 1.26, g: 1.39, b: 0, a: 0}
+    - _SunColor: {r: 64, g: 64, b: 64, a: 1}
+    - _SunsetColor: {r: 32, g: 8.88529, b: 1.962265, a: 1}
+    - _SunStep: {r: 0.035, g: 0.03, b: 0.35, a: 0.01}
+    - _SunsetCloudColor: {r: 1, g: 0.28152826, b: 0, a: 1}
+    - _Sun_Horizon: {r: -0.02, g: 0.02, b: 0, a: 0}
+    - _Mask_Step: {r: 1, g: 0, b: 0, a: 0}
+    - _Horizon_Glow_Color: {r: 1, g: 0.45, b: 0.15, a: 1}
+    - _Moon_Color: {r: 4.5412054, g: 4.5412054, b: 4.5412054, a: 1}
+    - _Moon_Step: {r: 0.998, g: 0.9981, b: 0, a: 0}
+    - _Moon_Light_Step: {r: 0.53, g: 1, b: 0, a: 0}
+    - _Halo_Color: {r: 0.6, g: 0.7, b: 1, a: 1}
+    - _Moon_Direction: {r: -0.7566384, g: -0.60876197, b: 0.23855275, a: 0}
+    - _Moon_Right: {r: 0.31689286, g: -0.022303998, b: 0.94819915, a: 0}
+    - _Moon_Up: {r: -0.57190686, g: 0.7930394, b: 0.20978832, a: 0}
+    - _Star_UV: {r: 0.6, g: 0.6, b: 0, a: 0}
+    - _Star_Fade: {r: 0.1, g: 0.5, b: 0, a: 0}
+    - _Twinkle_Mask_UV: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

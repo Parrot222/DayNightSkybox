@@ -1,0 +1,17 @@
+{
+  "name": "com.parrot222.daynight-skybox",
+  "version": "1.0.0",
+  "displayName": "Day Night Skybox",
+  "description": "A URP skybox with a full day/night cycle: sun and moon, sunset colors, horizon glow, rotating cloud panoramas, twinkling stars, cloud occlusion, plus a runtime UI with time-of-day presets and automatic time flow.",
+  "unity": "6000.0",
+  "keywords": ["skybox", "day night", "sky", "urp", "moon", "stars"],
+  "author": {
+    "name": "Parrot222",
+    "url": "https://github.com/Parrot222"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.0.0",
+    "com.unity.ugui": "2.0.0"
+  }
+}
