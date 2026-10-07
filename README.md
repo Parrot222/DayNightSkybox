@@ -1,5 +1,7 @@
 # Day Night Skybox (URP)
 
+![Day Night Skybox](Documentation~/cover.jpg)
+
 A stylized skybox with a full day/night cycle for the Universal Render Pipeline.
 
 - Sun driven by your Directional Light: grows and turns orange at sunset, sinks behind the ocean
