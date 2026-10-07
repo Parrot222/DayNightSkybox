@@ -19,6 +19,8 @@ namespace DayNightSkybox
         public Vector2 panelPosition = new Vector2(20, -20); // from the top-left corner
         public float sliderWidth = 300f;
         public int fontSize = 18;
+        [Tooltip("Whole numbers keep the text sharp (1 = 1:1 pixels, 2 = double size)")]
+        public float uiScale = 1f;
 
         [Header("Night Lighting (match the skybox Night Start / Night End)")]
         public bool fadeLightAtNight = true;
@@ -124,9 +126,11 @@ namespace DayNightSkybox
             var canvas = canvasGO.GetComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             canvas.sortingOrder = 100;
+            canvas.pixelPerfect = true; // snap to whole pixels so text stays sharp
+            // Constant pixel size: no fractional screen-size scaling, which blurs the font atlas
             var scaler = canvasGO.GetComponent<CanvasScaler>();
-            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            scaler.referenceResolution = new Vector2(1920, 1080);
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ConstantPixelSize;
+            scaler.scaleFactor = Mathf.Max(0.1f, uiScale);
 
             // Background panel
             float rowHeight = 40f;
